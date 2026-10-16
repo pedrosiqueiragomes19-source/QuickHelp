@@ -264,3 +264,5 @@ form>a:hover {
         padding: 40px 15px;
     }
 }
+/* Esconde a imagem duplicada: o fundo do .logo a ja mostra o logo */
+.logo a img { display: none; }
