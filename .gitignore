@@ -1,0 +1,27 @@
+﻿# Ambiente
+.env
+*.env
+
+# Configuração local (credenciais - não deve ir ao repositório)
+config/config.php
+config/config.env
+
+# Logs
+*.log
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# IDE
+/.idea
+/.vscode
+/.cursor
+
+# PHP cache
+/vendor
+
+
+quickhelp-api/vendor/
+quickhelp-api/.env
+quickhelp-api/storage/logs/

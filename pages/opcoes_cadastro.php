@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/icon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/config.css">
+    <link rel="stylesheet" href="../style/forms.css">
+    <title>Opções de cadastro - Quickhelp</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.php">
+            </a>
+        </div>
+        <button type="button" id="tema">
+            <img src="../assets/icon/sol-vermelho.png" alt="Tema escuro">
+        </button>
+    </header>
+    <div class="bg"></div>
+    <main>
+        <img src="../assets/img/img-opcoes.png" alt="Mulher caminhando com sacolas">
+        <form action="" method="post">
+            <article>
+                <p class="title">Um clique para começar</p>
+                <p>Selecione uma das opções</p>
+            </article>
+            <a href="usuario_cadastro.php">Sou cliente</a>
+            <a href="backoffice_cadastro.php" id="backoffice"> Sou backoffice</a>
+        </form>
+    </main>
+    <script src="../script/tema.js"></script>
+    <script src="../script/pass.js"></script>
+</body>
+</html>
