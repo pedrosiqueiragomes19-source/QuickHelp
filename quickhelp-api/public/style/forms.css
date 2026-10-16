@@ -266,3 +266,5 @@ form>a:hover {
 }
 /* Esconde a imagem duplicada: o fundo do .logo a ja mostra o logo */
 .logo a img { display: none; }
+
+.logo a { background-image: none !important; } .logo a img { display: block !important; }
