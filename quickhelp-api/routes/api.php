@@ -31,3 +31,26 @@ Route::post('/addresses', [AddressController::class, 'store']);
 Route::get('/addresses', [AddressController::class, 'index']);
 Route::put('/addresses/{id}', [AddressController::class, 'update']);
 Route::delete('/addresses/{id}', [AddressController::class, 'destroy']);
+
+Route::get('/ping', function () {
+    try {
+        \Illuminate\Support\Facades\DB::select('SELECT 1');
+        return response()->json(['status' => 'alive']);
+    } catch (\Throwable $e) {
+        return response()->json(['error' => 'Banco indisponível'], 500);
+    }
+});
+
+Route::post('/addresses', [AddressController::class, 'store']);
+Route::get('/addresses', [AddressController::class, 'index']);
+Route::put('/addresses/{id}', [AddressController::class, 'update']);
+Route::delete('/addresses/{id}', [AddressController::class, 'destroy']);
+
+Route::get('/ping', function () {
+    try {
+        \Illuminate\Support\Facades\DB::select('SELECT 1');
+        return response()->json(['status' => 'alive']);
+    } catch (\Throwable $e) {
+        return response()->json(['error' => 'Banco indisponível'], 500);
+    }
+});
